@@ -20,7 +20,6 @@ DNServer es una herramienta de bloqueo y redirección DNS, desarrollada en Pytho
 
 ## Requisitos
 
-* Python 3.7 o superior
 * Paquetes Python:
 
   ```bash
