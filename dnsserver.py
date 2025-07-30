@@ -80,7 +80,7 @@ class MiResolver(BaseResolver):
 
         # Modo mantenimiento: responder con TXT a todo
         if maintenance_mode:
-            reply.add_answer(RR(qname, QTYPE.TXT, rdata=TXT('PabloDNS: Estamos en mantenimiento'), ttl=60))
+            reply.add_answer(RR(qname, QTYPE.TXT, rdata=TXT('DNS: Estamos en mantenimiento'), ttl=60))
             action = 'maintenance mode'
         else:
             # Intentar cada regla activa
@@ -155,7 +155,7 @@ TEMPLATE = '''
     <h1>🔧 DNS Dashboard (Admin)</h1>
     <a href="{{ url_for('logout') }}" style="float:right">🚪 Logout</a>
     {% if maintenance_mode %}
-      <div class="flash warning">🛠️ <strong>Modo mantenimiento activo:</strong> PabloDNS: Estamos en mantenimiento</div>
+      <div class="flash warning">🛠️ <strong>Modo mantenimiento activo:</strong> DNS: Estamos en mantenimiento</div>
     {% endif %}
     <p><a href="{{ url_for('toggle_maintenance') }}">{{ 'Desactivar mantenimiento' if maintenance_mode else 'Activar mantenimiento' }}</a></p>
     <h2>Patrones de bloqueo</h2>
