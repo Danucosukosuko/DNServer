@@ -30,7 +30,7 @@ DNServer es una herramienta de bloqueo y redirección DNS, desarrollada en Pytho
 ## Estructura de archivos
 
 ```text
-├── dnsblock.py      # Código principal de la aplicación
+├── dnsserver.py      # Código principal de la aplicación
 ├── config.json      # Archivo de configuración y reglas (generado automáticamente)
 ├── logs.csv         # Exportación de logs (opcional, en tiempo de ejecución)
 └── stats.csv        # Exportación de estadísticas (opcional, en tiempo de ejecución)
